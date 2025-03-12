@@ -8,5 +8,5 @@ def multiply_by_two(x):
 def divide_by_two(x):
     return divide(x, 2)
 
-def calculatearea(length):
+def calculate_area(length):
     return length * length
