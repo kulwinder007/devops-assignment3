@@ -18,3 +18,6 @@ class TestApp:
     def test_division(self, numbers):
         res = divide_by_two(numbers[1])
         assert res == numbers[0]
+        
+    def testing_area_lasttwodigits(self):
+        assert calculatearea(78) == 40
