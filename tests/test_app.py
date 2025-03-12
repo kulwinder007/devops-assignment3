@@ -1,15 +1,10 @@
 import pytest
-
-from myapp.app import multiply_by_two, divide_by_two
-
-
+from myapp.app import multiply_by_two, divide_by_two, calculate_area
 @pytest.fixture
 def numbers():
     a = 10
     b = 20
     return [a,b]
-
-
 class TestApp:
     def test_multiplication(self, numbers):
         res = multiply_by_two(numbers[0])
@@ -20,4 +15,4 @@ class TestApp:
         assert res == numbers[0]
         
     def testing_area_lasttwodigits(self):
-        assert calculatearea(78) == 40
+        assert calculate_area(78) == 6084
